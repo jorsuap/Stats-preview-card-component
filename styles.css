@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;  
+    background-color: hsl(233, 49%, 7%);
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container{
+    display: grid;
+    height: 446px;
+    background-color: hsl(244, 38%, 16%);
+    grid-template-columns: 560px 540px;
+    border-radius: 10px;
+}
+.containert_text {
+    color:  hsl(0, 0%, 100%);
+    padding: 50px 120px 50px 70px;
+}
+#text-content{
+    font-size: 14px;
+    color:hsla(0, 0%, 100%, 0.75);
+    line-height : 25px;
+    padding: 0 37px 0 0;
+    margin-top: 35px;
+}
+h1{
+    font-size: 2.2em;
+    font-weight: 700; 
+}
+h2{
+    color:hsl(0, 0%, 100%);
+    margin: 0;
+}
+.container_stadistict{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.contenedor-img{
+    position: relative;
+}
+.container_img{
+    position: absolute;
+    background-image: url(./images/image-header-desktop.jpg) ;
+    background-size: cover;
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+    width:100%;
+}
+.overlay{
+    background: hsl(277, 64%, 61%);
+    opacity: 0.6;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
+p,h5{
+    margin: 0;
+    color:hsla(0, 0%, 100%, 0.6);
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 1150px) {
+    
+    .container{
+        display: flex;
+        flex-direction: column-reverse;        
+        width: 315px;
+        height: 740px;
+        margin-top: 20px;
+         
+    }
+    .containert_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 30px ;   
+    }
+    .contenedor-img{
+        position: relative;
+        width: 100%;
+       
+        height: 230px;
+        margin: 0;
+    }
+    .container_img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(./images/image-header-mobile.jpg) ;
+        border-radius: 10px 10px 0 0;
+    }
+    .overlay{
+        background: hsl(277, 64%, 61%);
+        opacity: 0.6;
+        height: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    #text-content{
+        margin:  0;
+        padding: 5px;
+        font-size: 14px;
+    }
+    .container_stadistict{
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+        margin:0;
+    }
+    .datas-stadistict{
+        margin: 10px;
+    }
+    h1{
+        font-size: 1.6em;
+        margin: 3;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .stadistict{
+        padding: 5px;
+    }
+}
